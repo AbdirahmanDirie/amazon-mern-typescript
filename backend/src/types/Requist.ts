@@ -1,9 +1,9 @@
 
 
 declare namespace Express {
-    export interface Requist {
+    export interface Request {
         user:{
-            id: string
+            _id: string
             name: string
             email: string
             isAdmin: boolean

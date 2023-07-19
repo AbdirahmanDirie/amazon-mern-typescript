@@ -58,7 +58,7 @@ function App() {
 
             {
               userInfo ? (
-                <NavDropdown title='userInfo.name' id='basic-nav-dropdown'>
+                <NavDropdown title={userInfo.name} id='basic-nav-dropdown'>
                   <Link
                   to='#signout'
                   className='dropdown-item'
@@ -66,6 +66,10 @@ function App() {
                   >
                   Sign Out
                   </Link>
+
+                  <LinkContainer to="/orderhistory">
+                  <NavDropdown.Item>Order History</NavDropdown.Item>
+                </LinkContainer>
                 </NavDropdown>
               ) : (
                 <Link to="/signin" className="nav-link">
